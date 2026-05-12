@@ -1,0 +1,406 @@
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* RESET */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* BODY */
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    background:#eef2ff;
+
+    color:#1e293b;
+
+}
+
+/* HEADER */
+
+header{
+
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+header p{
+
+    font-size:18px;
+
+}
+
+/* CONTENEDOR */
+
+.contenedor-principal{
+
+    display:flex;
+
+    gap:25px;
+
+    padding:25px;
+
+    flex-wrap:wrap;
+
+}
+
+/* TARJETAS */
+
+.formulario-card,
+.reservas-card{
+
+    flex:1;
+
+    min-width:320px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+.formulario-card:hover,
+.reservas-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* TITULOS */
+
+h2{
+
+    margin-bottom:20px;
+
+    color:#4f46e5;
+
+}
+
+/* FORMULARIO */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+input,
+select{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #dbeafe;
+
+    background:#f8fafc;
+
+    font-size:15px;
+
+}
+
+/* BOTÓN */
+
+button{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.03);
+
+    opacity:0.9;
+
+}
+
+/* TITULO IMAGEN */
+
+.titulo-imagen{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.titulo-imagen img{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #c7d2fe;
+
+}
+
+/* RESERVAS */
+
+.reserva-item{
+
+    background:#f8fafc;
+
+    border-left:6px solid #7c3aed;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border-radius:12px;
+
+}
+
+/* PROMOCIONES */
+
+.promociones{
+
+    padding:25px;
+
+}
+
+.promo-contenido{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.promo-box{
+
+    flex:1;
+
+    min-width:220px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+.promo-box:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.promo-box h3{
+
+    color:#7c3aed;
+
+    margin-bottom:10px;
+
+}
+
+/* TORNEOS */
+
+.torneos{
+
+    padding:25px;
+
+}
+
+.categorias{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.categoria{
+
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+    font-weight:500;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+/* CANCHAS */
+
+.canchas{
+
+    padding:25px;
+
+}
+
+.grid-canchas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+/* TARJETA CANCHA */
+
+.cancha-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+.cancha-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.cancha-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.cancha-card h3{
+
+    padding:18px;
+
+    color:#4f46e5;
+
+    font-size:22px;
+
+}
+
+.cancha-card p{
+
+    padding:0 18px 15px;
+
+    line-height:1.5;
+
+}
+
+/* ESTADÍSTICAS */
+
+.estadisticas{
+
+    padding:25px;
+
+}
+
+#resultadoEstadisticas{
+
+    margin-top:20px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .contenedor-principal{
+
+        flex-direction:column;
+
+    }
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reserva de Canchas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LIBRERÍA PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>⚽ RESERVA DE CANCHAS SINTÉTICAS</h1>
+
+        <p>Barranquilla - Atlántico</p>
+
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+
+    <main class="contenedor-principal">
+
+        <!-- FORMULARIO -->
+
+        <section class="formulario-card">
+
+            <h2>📋 Realizar Reserva</h2>
+
+            <form id="formReserva">
+
+                <label>Nombre del Cliente</label>
+                <input type="text" id="nombre" required>
+
+                <label>Seleccionar Cancha</label>
+
+                <select id="cancha">
+
+                    <option value="Tivoli">
+                        Tivoli
+                    </option>
+
+                    <option value="La 27">
+                        La 27
+                    </option>
+
+                    <option value="La 8 FC">
+                        La 8 FC
+                    </option>
+
+                    <option value="La Brasileirao">
+                        La Brasileirao
+                    </option>
+
+                    <option value="Complejo Pibe Valderrama">
+                        Complejo Pibe Valderrama
+                    </option>
+
+                </select>
+
+                <label>Fecha</label>
+                <input type="date" id="fecha" required>
+
+                <label>Horario</label>
+
+                <select id="hora">
+
+                    <option value="8 AM - 60000">
+                        8 AM - $60.000
+                    </option>
+
+                    <option value="10 AM - 70000">
+                        10 AM - $70.000
+                    </option>
+
+                    <option value="2 PM - 80000">
+                        2 PM - $80.000
+                    </option>
+
+                    <option value="6 PM - 120000">
+                        6 PM - $120.000
+                    </option>
+
+                    <option value="8 PM - 150000">
+                        8 PM - $150.000
+                    </option>
+
+                </select>
+
+                <button type="submit">
+
+                    Reservar Cancha
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- RESERVAS -->
+
+        <section class="reservas-card">
+
+            <div class="titulo-imagen">
+
+                <img src="imagenes/reservas.jpg">
+
+                <h2>📌 Reservas Realizadas</h2>
+
+            </div>
+
+            <div id="listaReservas"></div>
+
+        </section>
+
+    </main>
+
+    <!-- PROMOCIONES -->
+
+    <section class="promociones">
+
+        <div class="titulo-imagen">
+
+            <img src="imagenes/promociones.jpg">
+
+            <h2>🔥 Promociones Vigentes</h2>
+
+        </div>
+
+        <div class="promo-contenido">
+
+            <div class="promo-box">
+                <h3>2x1</h3>
+                <p>Martes en horarios de mañana.</p>
+            </div>
+
+            <div class="promo-box">
+                <h3>10% OFF</h3>
+                <p>Equipos universitarios.</p>
+            </div>
+
+            <div class="promo-box">
+                <h3>Hora Gratis</h3>
+                <p>Reserva 5 horas y gana 1.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TORNEOS -->
+
+    <section class="torneos">
+
+        <div class="titulo-imagen">
+
+            <img src="imagenes/torneo.jpg">
+
+            <h2>🏆 Torneos Internos</h2>
+
+        </div>
+
+        <div class="categorias">
+
+            <div class="categoria">
+                Infantil
+            </div>
+
+            <div class="categoria">
+                Juvenil
+            </div>
+
+            <div class="categoria">
+                Libre
+            </div>
+
+            <div class="categoria">
+                Veteranos
+            </div>
+
+            <div class="categoria">
+                Femenino
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CANCHAS -->
+
+    <section class="canchas">
+
+        <h2>📍 Canchas Disponibles</h2>
+
+        <div class="grid-canchas">
+
+            <!-- CANCHA 1 -->
+
+            <div class="cancha-card">
+
+                <img src="imagenes/cancha1.jpg">
+
+                <h3>Tivoli</h3>
+
+                <p><strong>Dirección:</strong> Barrio Tívoli, Barranquilla</p>
+
+                <p><strong>Referencia:</strong> Cerca al Parque Rosado</p>
+
+                <p>✅ Niños | ✅ Mascotas</p>
+
+            </div>
+
+            <!-- CANCHA 2 -->
+
+            <div class="cancha-card">
+
+                <img src="imagenes/cancha2.jpg">
+
+                <h3>La 27</h3>
+
+                <p><strong>Dirección:</strong> Calle 27, Barranquilla</p>
+
+                <p><strong>Referencia:</strong> Cerca a la Avenida Murillo</p>
+
+                <p>✅ Niños | ❌ Mascotas</p>
+
+            </div>
+
+            <!-- CANCHA 3 -->
+
+            <div class="cancha-card">
+
+                <img src="imagenes/cancha3.jpg">
+
+                <h3>La 8 FC</h3>
+
+                <p><strong>Dirección:</strong> Calle 8 #38</p>
+
+                <p><strong>Referencia:</strong> Cerca al estadio Romelio Martínez</p>
+
+                <p>✅ Niños | ✅ Mascotas</p>
+
+            </div>
+
+            <!-- CANCHA 4 -->
+
+            <div class="cancha-card">
+
+                <img src="imagenes/cancha4.jpg">
+
+                <h3>La Brasileirao</h3>
+
+                <p><strong>Dirección:</strong> Carrera 46</p>
+
+                <p><strong>Referencia:</strong> Cerca al Centro Comercial Único</p>
+
+                <p>❌ Mascotas</p>
+
+            </div>
+
+            <!-- CANCHA 5 -->
+
+            <div class="cancha-card">
+
+                <img src="imagenes/cancha5.jpg">
+
+                <h3>Complejo Pibe Valderrama</h3>
+
+                <p><strong>Dirección:</strong> Avenida Circunvalar</p>
+
+                <p><strong>Referencia:</strong> Frente a la estación de servicio</p>
+
+                <p>✅ Niños | ✅ Mascotas</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="estadisticas">
+
+        <h2>📊 Horas Más Solicitadas</h2>
+
+        <button onclick="mostrarEstadisticas()">
+
+            Ver Estadísticas
+
+        </button>
+
+        <div id="resultadoEstadisticas"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
